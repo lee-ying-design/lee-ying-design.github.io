@@ -4,75 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lee Ying Design</title>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  /* 背景：漸層 + 圖片 */
-  background-image: linear-gradient(-45deg, #B76E79, #F3D3C1, #9F7AEA, #E4B7D4), url("images/my-bg.jpg");
-  background-size: 400% 400%, cover; /* 第一層漸層動畫，第二層圖片填滿 */
-  background-position: 0% 50%, center;
-  background-repeat: no-repeat, no-repeat;
+      background: url("images/bg.jpg") no-repeat center center;
+      background-size: cover;
+    }
 
-  animation: gradientBG 15s ease infinite;
-}
+    .container {
+      text-align: center;
+      z-index: 1;
+    }
 
-@keyframes gradientBG {
-  0%   { background-position: 0% 50%, center; }
-  50%  { background-position: 100% 50%, center; }
-  100% { background-position: 0% 50%, center; }
-}
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 32px;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
+      border-radius: 40px;
+      transition: 0.3s ease;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.25);
+    }
 
-.container {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.35); /* 半透明黑底 */
-  padding: 40px;
-  border-radius: 20px;
-  animation: fadeIn 2s ease forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-h1 {
-  font-size: 3em;
-  margin: 0;
-  background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: fadeIn 2s ease forwards;
-}
-
-p {
-  font-size: 1.2em;
-  margin-top: 10px;
-  animation: fadeIn 3s ease forwards;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  font-size: 1em;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
-  border-radius: 30px;
-  transition: 0.3s ease;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-  animation: fadeIn 4s ease forwards;
-}
-.btn:hover {
-  opacity: 0.85;
-  transform: translateY(-2px);
-}
-</style>
+    .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="portfolio.html" class="btn">進入作品集</a>
+  </div>
+</body>
+</html>
