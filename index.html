@@ -10,9 +10,8 @@
       font-family: Arial, Helvetica, sans-serif;
       height: 100vh;
       position: relative;
-      overflow: hidden;
 
-      /* 保留原本背景設定 */
+      /* 高畫質背景 */
       background: url("images/my-bg.jpg") no-repeat center center;
       background-size: cover;
     }
@@ -25,15 +24,6 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 1;
-
-      /* 文字閃爍動畫 */
-      animation: textBlink 2s infinite;
-      transition: transform 0.1s ease-out;
-    }
-
-    @keyframes textBlink {
-      0%, 50%, 100% { opacity: 1; }
-      25%, 75% { opacity: 0.6; }
     }
 
     /* 按鈕樣式 */
@@ -44,33 +34,4 @@
       font-size: 1.1em;
       font-weight: bold;
       text-decoration: none;
-      color: white;
-      background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
-      border-radius: 40px;
-      transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0px 4px 15px rgba(0,0,0,0.25);
-    }
-
-    .btn:hover {
-      opacity: 1;
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <a href="portfolio.html" class="btn">進入作品集</a>
-  </div>
-
-  <script>
-    // 文字跟隨滑鼠微動
-    const container = document.querySelector('.container');
-    document.addEventListener('mousemove', (e) => {
-      const x = (e.clientX - window.innerWidth / 2) / 50;
-      const y = (e.clientY - window.innerHeight / 2) / 50;
-      container.style.transform = `translateX(-50%) translate(${x}px, ${y}px)`;
-    });
-  </script>
-</body>
-</html>
+      color
