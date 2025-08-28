@@ -28,23 +28,31 @@
 
     /* 按鈕樣式 */
     .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 32px;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
-  border-radius: 40px;
-  transition: 0.5s ease, box-shadow 0.5s ease, background-position 0.5s ease;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.25);
-  background-size: 200% 100%;
-}
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 32px;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
+      border-radius: 40px;
+      transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.25);
+    }
 
-.btn:hover {
-  background-position: right center;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-  transform: none; /* 不放大 */
-}
-
+    /* 按鈕 hover 漂浮效果 */
+    .btn:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lee Ying Design</h1>
+    <p>我的設計實驗空間</p>
+    <a href="portfolio.html" class="btn">進入作品集</a>
+  </div>
+</body>
+</ht
