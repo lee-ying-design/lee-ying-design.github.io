@@ -12,9 +12,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #B76E79, #F3D3C1, #9F7AEA);
-      background-size: 300% 300%;
-      animation: gradientBG 12s ease infinite;
+      /* 加強漸層顏色範圍 */
+      background: linear-gradient(-45deg, #B76E79, #F3D3C1, #9F7AEA, #E4B7D4);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: white;
     }
 
@@ -26,9 +27,15 @@
 
     .container {
       text-align: center;
-      background: rgba(0, 0, 0, 0.3); /* 半透明黑底，讓字更清楚 */
+      background: rgba(0, 0, 0, 0.25); /* 半透明黑底，讓字更清楚 */
       padding: 40px;
       border-radius: 20px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
@@ -37,11 +44,13 @@
       background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: fadeIn 2s ease forwards;
     }
 
     p {
       font-size: 1.2em;
       margin-top: 10px;
+      animation: fadeIn 3s ease forwards;
     }
 
     .btn {
@@ -56,6 +65,7 @@
       border-radius: 30px;
       transition: 0.3s ease;
       box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      animation: fadeIn 4s ease forwards;
     }
     .btn:hover {
       opacity: 0.85;
