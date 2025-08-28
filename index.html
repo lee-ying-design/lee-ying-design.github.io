@@ -4,80 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lee Ying Design</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* 加強漸層顏色範圍 */
-      background: linear-gradient(-45deg, #B76E79, #F3D3C1, #9F7AEA, #E4B7D4);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      color: white;
-    }
+ <style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+    /* 背景：漸層 + 圖片 */
+    background: linear-gradient(-45deg, #B76E79, #F3D3C1, #9F7AEA, #E4B7D4),
+                url("images/my-bg.jpg");
+    background-size: 400% 400%, cover;   /* 漸層動畫 + 圖片填滿 */
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
 
-    .container {
-      text-align: center;
-      background: rgba(0, 0, 0, 0.25); /* 半透明黑底，讓字更清楚 */
-      padding: 40px;
-      border-radius: 20px;
-      animation: fadeIn 2s ease forwards;
-    }
+    /* 漸層動畫 */
+    animation: gradientBG 15s ease infinite;
+    color: white;
+  }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%, center; }
+    50% { background-position: 100% 50%, center; }
+    100% { background-position: 0% 50%, center; }
+  }
 
-    h1 {
-      font-size: 3em;
-      margin: 0;
-      background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: fadeIn 2s ease forwards;
-    }
+  .container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.35); /* 半透明黑底，文字清晰 */
+    padding: 40px;
+    border-radius: 20px;
+    animation: fadeIn 2s ease forwards;
+  }
 
-    p {
-      font-size: 1.2em;
-      margin-top: 10px;
-      animation: fadeIn 3s ease forwards;
-    }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 1em;
-      font-weight: bold;
-      text-decoration: none;
-      color: white;
-      background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
-      border-radius: 30px;
-      transition: 0.3s ease;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-      animation: fadeIn 4s ease forwards;
-    }
-    .btn:hover {
-      opacity: 0.85;
-      transform: translateY(-2px);
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Lee Ying Design</h1>
-    <p>我的設計實驗空間</p>
-    <a href="portfolio.html" class="btn">進入作品集</a>
-  </div>
-</body>
-</html>
+  h1 {
+    font-size: 3em;
+    margin: 0;
+    background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s ease forwards;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    animation: fadeIn 3s ease forwards;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
+    border-radius: 30px;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    animation: fadeIn 4s ease forwards;
+  }
+  .btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+  }
+</style>
