@@ -28,10 +28,23 @@
 
     /* 按鈕樣式 */
     .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 32px;
-      font-size: 1.1em;
-      font-weight: bold;
-      text-decoration: none;
-      color
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(90deg, #B76E79, #F3D3C1, #9F7AEA);
+  border-radius: 40px;
+  transition: 0.5s ease, box-shadow 0.5s ease, background-position 0.5s ease;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.25);
+  background-size: 200% 100%;
+}
+
+.btn:hover {
+  background-position: right center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  transform: none; /* 不放大 */
+}
+
