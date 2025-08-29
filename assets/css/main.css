@@ -4688,8 +4688,9 @@ input, select, textarea {
 		}
 
 	}
-/* ===== Step 1: 背景顏色調整 ===== */
-body {
-  background: linear-gradient(180deg, #000000, #1a0014, #000000);
-  color: #e0e0e0;
+#intro {
+  background-image: url('images/my-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
